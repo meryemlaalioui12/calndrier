@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #bdbdbd;
+    width: 260px;
+}
+.input-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.input-row input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-row button {
+    border: none;
+    background: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.month-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.month-header button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.month-header h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 1px solid #ccc;
+}
+
+.days span {
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dates span {
+    text-align: center;
+    padding: 6px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.dates span:hover {
+    background-color: #e0e0e0;
+}
+
+.dates .empty {
+    cursor: default;
+}
